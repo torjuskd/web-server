@@ -1,1 +1,3 @@
-AddDescription "This is what a post looks like" this-is-what-a-post-looks-like.html
+Options +Indexes
+AddDescription "First post" "first-post.html" #Sat, 05 Dec 2020 18:51:43 +0000
+AddDescription "Binding capslock to escape" "binding-capslock-to-escape.html" #Sat, 05 Dec 2020 18:56:28 +0000

@@ -11,6 +11,34 @@
 
 <!-- LB -->
 
+<item>
+<title>Binding capslock to escape</title>
+<guid>https://torjusdahle.com/2020.html#binding-capslock-to-escape</guid>
+<pubDate>Sat, 05 Dec 2020 18:56:28 +0000</pubDate>
+<description><![CDATA[
+<h1>Binding caps to esc on modern linux systems</h1>
+<p>/usr/bin/setxkbmap -option "caps:escape"</p>
+<p>will do the job on most systems, add to autostart (eg. Session and startup on xfce)</p>
+]]></description>
+</item>
+
+
+<item>
+<title>First post</title>
+<guid>https://torjusdahle.com/2020.html#first-post</guid>
+<pubDate>Sat, 05 Dec 2020 18:51:43 +0000</pubDate>
+<description><![CDATA[
+<h1>Purpose/content</h1>
+<p>Hi and welcome to my site. I will probably use
+it mostly for notes, guides and various information
+recorded for personal use, but that maybe one day
+can be helpful for others as well.<p>
+]]></description>
+</item>
+
+
+
+
 </channel>
 </rss>
 
