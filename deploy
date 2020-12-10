@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cp *.html /var/www/home
-cp *.css /var/www/home
-cp -r blog /var/www/home
-cp *.xml /var/www/home
+cp /root/web-server/*.html /var/www/home
+cp /root/web-server/*.css /var/www/home
+cp -r /root/web-server/blog /var/www/home
+cp /root/web-server/*.xml /var/www/home
 
 
