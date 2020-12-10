@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "deploying files to /var/www/home"
+echo "Deploying files to /var/www/home"
 cp /root/web-server/*.html /var/www/home
 cp /root/web-server/*.css /var/www/home
 cp -r /root/web-server/blog /var/www/home
