@@ -1,9 +1,11 @@
 #!/bin/bash
+DIR=/root/Documents/web-server
+DEPLOYDIR=/var/www/home
 
-cp /root/web-server/*.html /var/www/home
-cp /root/web-server/*.css /var/www/home
-cp -r /root/web-server/blog /var/www/home
-cp /root/web-server/*.xml /var/www/home
-echo "Deployed files to /var/www/home"
+cp $DIR/*.html $DEPLOYDIR
+cp $DIR/*.css $DEPLOYDIR
+cp -r $DIR/blog $DEPLOYDIR
+cp  $DIR/*.xml $DEPLOYDIR
+echo "Deployed files from $DIR to $DEPLOYDIR" | tee -a ~/.deploylog
 
 
