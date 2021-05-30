@@ -1,0 +1,464 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>torjuskd@folk.uio.no</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link rel="shortcut icon" href="images/University_of_Oslo_seal.svg.png">
+  </head>
+  <body class="no-sidebar">
+    <div id="page-wrapper">
+
+      <!-- Header -->
+      <div id="header-wrapper" class="wrapper">
+	<div id="header">
+
+	  <!-- Logo -->
+	  <div id="logo">
+	    <!-- <h1><a href="index.html">Hei</a></h1> -->
+	    <!-- <p style="color: rgba(255, 255, 255, 0.85);" >Velkommen til Torjus Dahles hjemmeside.</p> -->
+	  </div>
+
+	  <!-- Nav -->
+	  <nav id="nav">
+	    <ul>
+	      <li class="current"><a href="index.html">Hjem</a></li>
+	      <li><a href="kunst.html" style="color:#e97770;">Kunst</a></li>
+	      <li>
+		<a>Eksterne lenker</a>
+		<ul>
+		  <li><a href="https://github.com/torjuskd/snacks/blob/master/README.md">Studentfordeler/snacks</a></li>
+		</ul>
+	      </li>
+
+	      <!-- <li> -->
+	      <!--      <a href="#">Dropdown</a> -->
+	      <!--      <ul> -->
+	      <!--        <li><a href="#">Lorem ipsum</a></li> -->
+	      <!--        <li><a href="#">Magna veroeros</a></li> -->
+	      <!--        <li><a href="#">Etiam nisl</a></li> -->
+	      <!--        <li> -->
+	      <!--          <a href="#">Sed consequat</a> -->
+	      <!--          <ul> -->
+	      <!--            <li><a href="#">Lorem dolor</a></li> -->
+	      <!--            <li><a href="#">Amet consequat</a></li> -->
+	      <!--            <li><a href="#">Magna phasellus</a></li> -->
+	      <!--            <li><a href="#">Etiam nisl</a></li> -->
+	      <!--            <li><a href="#">Sed feugiat</a></li> -->
+	      <!--          </ul> -->
+	      <!--        </li> -->
+	      <!--        <li><a href="#">Nisl tempus</a></li> -->
+	      <!--      </ul> -->
+	      <!-- </li> -->
+	      <!-- <li><a href="left-sidebar.html">Left Sidebar</a></li> -->
+	      <!-- <li><a href="right-sidebar.html">Right Sidebar</a></li> -->
+
+	    </ul>
+	  </nav>
+
+	</div>
+      </div>
+
+      <!-- Main -->
+      <div class="wrapper style2">
+	<!-- <div class="title"></div> -->
+	<div id="main" class="container">
+
+	  <!-- Content -->
+	  <div id="content">
+	    <article class="box post">
+	      <header class="style1">
+		<h2>Kan datamaskiner bli kunstnere?
+		  <!-- <br class="mobile-hide" /> -->
+		  <!-- ... -->
+		</h2>
+		<p>Maskinlæring og malerier</p>
+	      </header>
+	      <img src="images/robot.jpg" alt="" style="height: 15em; width: auto; float:right; border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+	      <p>
+		Ved hjelp av maskinlæring er det blitt mulig å få datamaskiner til å tegne bilder, og forsøke å være kunstnere. I denne artikkelen skal vi bruke dette til å
+		benytte oss av de stilmessige egenskapene i et bilde til å tegne innholdet i et annet bilde på nytt.
+		Algoritmene vi skal bruke er inspirert av den menneskelige hjernen - såkalt <a href="https://en.wikipedia.org/wiki/Deep_learning">Deep learning</a>.
+		Dette fungerer ved å sette opp en graf med mange lag av noder i et forsøk på å imitere hjernen. Noder i grafen tilsvarer nevroner og kanter synapser.
+		Deretter mater man systemet med informasjon, slik at synapser kan styrkes eller svekkes. Slik kan systemet "lære" og stadig tilpasse seg til ny informasjon.
+		Det kalles altså deep learning fordi vi har en dyp graf, og fordi systemet lærer litt på samme måte som mennesker.
+		Forskerene som har utviklet akkurat denne tjenenesten her har brukt dette til objektgjenkjenning - eller kanskje mer presist - objekt-mønstergjenkjenning.
+	      </p>
+	      <p>
+		Vi skal benytte oss av denne <a href="https://github.com/jcjohnson/neural-style">Torch-implementasjonen</a>, som igjen bruker de omtalte algoritmene
+		for å tegne bilder.
+		Om du har lyst til å prøve dette på egenhånd må du brette opp ermene og forberede deg på å innstallere en del greier. Jeg vil anbefale å også laste ned
+		CUDA, cuDNN eller OpenCL-backend, slik får du benyttet deg av grafikkortet ditt til å gjøre utregninger. Uten dette tar det ekstremt lang tid å
+		prosessere bildene. Du må også antagelig tweake litt parametere for å unngå å gå tom for minne ol. Det var iallefall min erfaring med noen av bildene.
+	      </p>
+	      <p>
+		Hvis du har lyst til å "jukse" litt kan du benytte deg av en tjeneste som <a href="https://deepart.io/">deepart.io</a>, som fungerer på omtrent samme måte.
+		Om du er interessert i dype nevrale netteverk og algoritmene som er brukt, kan lese mer om dem <a href="https://arxiv.org/abs/1508.06576">her</a>.
+	      </p>
+	      <header class="style1">
+		<h2></h2>
+		<p>Arne Kleng Dahle</p>
+	      </header>
+	      <div style="display: inline-block">
+		<a href="https://nkl.snl.no/Arne_Kleng_Dahle" >
+		  <img src="images/mlkunst/toen_gaard_svene_mai2014_IMG_9982_GF.jpg" alt="" style="float:right; border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		</a>
+		<p>
+		  Som noen av dere kanskje vet er min farfar kunstner. Jeg tenkte derfor å ha det litt gøy med å bruke bildene hans som stiler til å tegne om andre bilder, og se hvordan de blir
+		  i <a href="http://www.almo.cc/a-e/dahle-arne-kleng">Arne Kleng Dahle</a>-stil. Arne maler uttrykksfulle bilder, ofte abstrakte eller delvis abstrakte, gjerne av natur.
+		  Vi kommer derfor til å starte med noen landskapsbilder, og siden prøve litt forskjellig og forhåpentligvis ha det litt gøy.
+		</p>
+
+		<p>
+		  Nå som jeg skriver denne artikkelen har jeg dessverre bare tilgang til de bildene som er lagt ut på nettet. Noen av dem har dårlig oppløsning, men
+		  kanskje vi kan få til noe allikevel. De fleste bildene av Arne som jeg har fått tak i er blant de eldre. Jeg skulle gjerne også hatt noen av de nyere, ettersom han har
+		  malt mange (etter min mening kule) bilder i det siste. Kanskje jeg oppdaterer denne siden og legger til flere bilder etter hvert.
+		</p>
+
+	      </div>
+
+	      <p>
+		Jeg kommer til å plassere bildene på rader nedover i denne rekkefølgen:<br /><strong> 1. Input bilde som skal tegnes om, 2. Arnes bilde som vi bruker som stil, 3. Resultat/output-bilde. </strong> La oss begynne.
+	      </p>
+	      <p>
+		Vi starter med et høstbilde:
+	      </p>
+
+	      <table>
+		<tr style="vertical-align: top">
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/landskap/11_hd-fall-nature-wallpapers-wallpaper-4.jpg" alt="" class="page-image" style="float:left; border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/utvalg/11_toen_gaard_svene_mai2014_IMG_9982_GF.jpg" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/results/11_result_c21805c31f129160744a3006bd309698.jpg.png" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		</tr>
+	      </table>
+	      <p>
+		Ikke dårlig! Om vi tar i betraktning at vi brukte et bilde av et landskap og en elv til å tegne trær, må jeg si at resultatet ble overraskende bra. La oss prøve med noen vinterbilder.
+	      </p>
+	      <table>
+		<tr style="vertical-align: top">
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/landskap/1122_winter-nature-forest-snow-wallpaper-mac-desktop-1920x1080.jpg" alt="" class="page-image" style="float:left; border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/utvalg/1122_Vinter_Maleri_80x100_cm_13500_ur.jpg" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/results/1122_result_f9cc33dd84892a1f767d370d4cd71205.jpg.png" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		</tr>
+	      </table>
+	      <p>
+		Nå snakker vi her! Hva med noen sommerbilder?
+	      </p>
+	      <table>
+		<tr style="vertical-align: top">
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/landskap/1133_norway_home_sea_boats_mountains_105138_3840x2400.jpg" alt="" class="page-image" style="float:left; border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/utvalg/1133_Minne_Akrylmaleri_93x60cm.jpg" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/results/1133_result_e733bbda852b0a53f25664ced7bbd5f6.jpg.png" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		</tr>
+	      </table>
+	      <p>
+		Vi kombinerte et bilde tatt på dagen, med et maleri med en sommernatt som motiv. Både stil og lys ble overført, til et relativt troverdig bilde.
+	      </p>
+
+	      <p>
+		Kanskje vi skal prøve noen kjente malerier, for å se hvordan AKD ville ha malt dem?
+	      </p>
+	      <table>
+		<tr style="vertical-align: top">
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/kjente/1_The_Scream.jpg" alt="" class="page-image" style="float:left; border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/utvalg/1.1_tidlig_sno.jpg" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/results/1.1_result.png" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		</tr>
+		<tr style="vertical-align: top">
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/kjente/2_Starry_Night-1024x811.jpg" alt="" class="page-image" style="float:left; border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/utvalg/1.2_Natthavn_Maleri_80x80cm.jpg" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/results/1.2_result.png" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		</tr>
+		<tr style="vertical-align: top">
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/kjente/3_mona_lisa.jpg" alt="" class="page-image" style="float:left; border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/utvalg/1.3_Sommerkveld.jpg" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		  <td style="vertical-align: top">
+		    <img src="images/mlkunst/results/1.3_result.png" alt="" class="page-image" style="border-style: solid; border-width: 0.5em; border-color: #f3f3f3"/>
+		  </td>
+		</tr>
+
+	      </table>
+	      <header class="style1">
+		<h2></h2>
+		<p>Avsluttende ord</p>
+	      </header>
+
+	      <p>
+		Maskinlæring brukes mer og mer i kunstsammenheng. Det har bidratt til flere oppdagelser rundt gamle kunstverk.
+		En teknikk som er spesielt kraftig er multimodal maskinlæring hvor det er vanlig å bruke en kombinasjon av vanlige fotografier og røntgenstråler
+		til å avdekke flere lag i et maleri. Hvis tidligere lag er blitt <a href="https://no.wikipedia.org/wiki/Palimpsest">vasket vekk</a>
+		eller <a href="https://www.theguardian.com/artanddesign/2008/jul/31/2">tegnet over</a> kan denne teknikken avsløre motivet under.
+		<a href="https://sites.google.com/site/multiml2016cvpr/">Her</a> kan du lære mer om multimodal maskinlæring.
+		Om du vil vite mer om Arne har han en <a href="http://thorebass.wixsite.com/arneklengdahle/galleri">hjemmeside</a> som jeg ikke er helt sikker på om oppdateres lenger.
+	      </p>
+	    </article>
+	    <div></div>
+
+	    <!-- <div class="row 150%"> -->
+	    <!--   <div class="4u 12u(mobile)"> -->
+	    <!--        <section class="box"> -->
+	    <!--          <header> -->
+	    <!--            <h2>Magna pulvinar tempus</h2> -->
+	    <!--          </header> -->
+	    <!--          <a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a> -->
+	    <!--          <p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus -->
+	    <!--            eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis -->
+	    <!--            tempus.</p> -->
+	    <!--          <a href="#" class="button style1">More</a> -->
+	    <!--        </section> -->
+	    <!--   </div> -->
+	    <!--   <div class="4u 12u(mobile)"> -->
+	    <!--        <section class="box"> -->
+	    <!--          <header> -->
+	    <!--            <h2>Magna pulvinar tempus</h2> -->
+	    <!--          </header> -->
+	    <!--          <a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a> -->
+	    <!--          <p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus -->
+	    <!--            eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis -->
+	    <!--            tempus.</p> -->
+	    <!--          <a href="#" class="button style1">More</a> -->
+	    <!--        </section> -->
+	    <!--   </div> -->
+	    <!--   <div class="4u 12u(mobile)"> -->
+	    <!--        <section class="box"> -->
+	    <!--          <header> -->
+	    <!--            <h2>Magna pulvinar tempus</h2> -->
+	    <!--          </header> -->
+	    <!--          <a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a> -->
+	    <!--          <p>Rutrum bibendum. Proin pellentesque diam non ligula commodo tempor. Vivamus -->
+	    <!--            eget urna nibh. Curabitur non fringilla nisl. Donec accumsan interdum nisi, quis -->
+	    <!--            tempus.</p> -->
+	    <!--          <a href="#" class="button style1">More</a> -->
+	    <!--        </section> -->
+	    <!--   </div> -->
+	    <!-- </div> -->
+	  </div>
+
+	</div>
+      </div>
+
+      <!-- Highlights -->
+      <!-- <div class="wrapper style3"> -->
+      <!--   <div class="title">The Endorsements</div> -->
+      <!--   <div id="highlights" class="container"> -->
+      <!--     <div class="row 150%"> -->
+      <!--       <div class="4u 12u(mobile)"> -->
+      <!--         <section class="highlight"> -->
+      <!--           <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a> -->
+      <!--           <h3><a href="#">Aliquam diam consequat</a></h3> -->
+      <!--           <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p> -->
+      <!--           <ul class="actions"> -->
+      <!--             <li><a href="#" class="button style1">Learn More</a></li> -->
+      <!--           </ul> -->
+      <!--         </section> -->
+      <!--       </div> -->
+      <!--       <div class="4u 12u(mobile)"> -->
+      <!--         <section class="highlight"> -->
+      <!--           <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a> -->
+      <!--           <h3><a href="#">Nisl adipiscing sed lorem</a></h3> -->
+      <!--           <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p> -->
+      <!--           <ul class="actions"> -->
+      <!--             <li><a href="#" class="button style1">Learn More</a></li> -->
+      <!--           </ul> -->
+      <!--         </section> -->
+      <!--       </div> -->
+      <!--       <div class="4u 12u(mobile)"> -->
+      <!--         <section class="highlight"> -->
+      <!--           <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a> -->
+      <!--           <h3><a href="#">Mattis tempus lorem</a></h3> -->
+      <!--           <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p> -->
+      <!--           <ul class="actions"> -->
+      <!--             <li><a href="#" class="button style1">Learn More</a></li> -->
+      <!--           </ul> -->
+      <!--         </section> -->
+      <!--       </div> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!-- </div> -->
+
+      <!-- Footer -->
+      <div id="footer-wrapper" class="wrapper">
+	<!-- <div class="title">Resten</div> -->
+	<div id="footer" class="container">
+
+	  <header class="style1">
+	    <p class="style3" style="color:#eee;">
+	      Andre platformer:
+	      <br />
+	      <a href="https://github.com/torjuskd"><img src="images/gitHub_icon.png" alt="GitHub" title="GitHub" height="35"></a>
+	      <a href="https://no.linkedin.com/in/torjus-dahle-999280ba"><img src="images/linkedin_icon.png" alt="Linkedin" title="Linkedin" height="35"></a>
+	    </p>
+	    <!-- <h2>Du kan finne meg på andre platformer:</h2> -->
+	    <!-- <a href="https://github.com/torjuskd"><img src="images/gitHub_icon.png" alt="GitHub" title="GitHub" height="35"></a> -->
+	    <!-- <a href="https://no.linkedin.com/in/torjus-dahle-999280ba"><img src="images/linkedin_icon.png" alt="Linkedin" title="Linkedin" height="35"></a> -->
+	    <!-- <p> -->
+	    <!--   Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br /> -->
+	    <!--   Nam pharetra laoreet imperdiet volutpat etiam consequat feugiat. -->
+	    <!--   https://no.linkedin.com/in/torjus-dahle-999280ba -->
+	    <!-- </p> -->
+	  </header>
+	  <!-- <hr /> -->
+
+	  <!-- <header class="style1"> -->
+	  <!--   <h2>Ipsum sapien elementum portitor?</h2> -->
+	  <!--   <p> -->
+	  <!--     Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br /> -->
+	  <!--     Nam pharetra laoreet imperdiet volutpat etiam consequat feugiat. -->
+	  <!--   </p> -->
+	  <!-- </header> -->
+	  <!-- <hr /> -->
+	  <div class="row 150%">
+	    <div class="6u 12u(mobile)">
+
+	      <!-- Contact Form -->
+	      <!-- <section> -->
+	      <!--      <form method="post" action="#"> -->
+	      <!--        <div class="row 50%"> -->
+	      <!--          <div class="6u 12u(mobile)"> -->
+	      <!--            <input type="text" name="name" id="contact-name" placeholder="Name" /> -->
+	      <!--          </div> -->
+	      <!--          <div class="6u 12u(mobile)"> -->
+	      <!--            <input type="text" name="email" id="contact-email" placeholder="Email" /> -->
+	      <!--          </div> -->
+	      <!--        </div> -->
+	      <!--        <div class="row 50%"> -->
+	      <!--          <div class="12u"> -->
+	      <!--            <textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea> -->
+	      <!--          </div> -->
+	      <!--        </div> -->
+	      <!--        <div class="row"> -->
+	      <!--          <div class="12u"> -->
+	      <!--            <ul class="actions"> -->
+	      <!--              <li><input type="submit" class="style1" value="Send" /></li> -->
+	      <!--              <li><input type="reset" class="style2" value="Reset" /></li> -->
+	      <!--            </ul> -->
+	      <!--          </div> -->
+	      <!--        </div> -->
+	      <!--      </form> -->
+	      <!-- </section> -->
+
+	    </div>
+	    <div class="6u 12u(mobile)">
+
+	      <!-- Contact -->
+	      <!-- <section class="feature-list small"> -->
+	      <!--      <div class="row"> -->
+	      <!--        <div class="6u 12u(mobile)"> -->
+	      <!--          <section> -->
+	      <!--            <h3 class="icon fa-home">Mailing Address</h3> -->
+	      <!--            <p> -->
+	      <!--              Untitled Corporation<br /> -->
+	      <!--              1234 Somewhere Rd #987<br /> -->
+	      <!--              Nashville, TN 00000-0000 -->
+	      <!--            </p> -->
+	      <!--          </section> -->
+	      <!--        </div> -->
+	      <!--        <div class="6u 12u(mobile)"> -->
+	      <!--          <section> -->
+	      <!--            <h3 class="icon fa-comment">Social</h3> -->
+	      <!--            <p> -->
+	      <!--              <a href="#">@untitled-corp</a><br /> -->
+	      <!--              <a href="#">linkedin.com/untitled</a><br /> -->
+	      <!--              <a href="#">facebook.com/untitled</a> -->
+	      <!--            </p> -->
+	      <!--          </section> -->
+	      <!--        </div> -->
+	      <!--      </div> -->
+	      <!--      <div class="row"> -->
+	      <!--        <div class="6u 12u(mobile)"> -->
+	      <!--          <section> -->
+	      <!--            <h3 class="icon fa-envelope">Email</h3> -->
+	      <!--            <p> -->
+	      <!--              <a href="#">info@untitled.tld</a> -->
+	      <!--            </p> -->
+	      <!--          </section> -->
+	      <!--        </div> -->
+	      <!--        <div class="6u 12u(mobile)"> -->
+	      <!--          <section> -->
+	      <!--            <h3 class="icon fa-phone">Phone</h3> -->
+	      <!--            <p> -->
+	      <!--              (000) 555-0000 -->
+	      <!--            </p> -->
+	      <!--          </section> -->
+	      <!--        </div> -->
+	      <!--      </div> -->
+	      <!-- </section> -->
+
+	    </div>
+	  </div>
+	  <hr />
+	</div>
+	<div id="copyright">
+	  <ul>
+	    <li>&copy; Torjus Dahle</li>
+	    <!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+	  </ul>
+	</div>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
+
+
+<!-- <table> -->
+<!--   <tr style="vertical-align: top"> -->
+<!--     <td style="vertical-align: top"> -->
+
+<!--     </td> -->
+<!--     <td style="vertical-align: top"> -->
+
+<!--     </td> -->
+<!--     <td style="vertical-align: top"> -->
+
+<!--     </td> -->
+<!--   </tr> -->
+<!-- </table> -->
