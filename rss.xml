@@ -3,63 +3,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-<title>Your RSS Feed Title</title>
-<description>A brief description of your RSS feed.</description>
+<title>Torjus's site</title>
+<description>Rss-feed for posts to Torjus's site</description>
 <language>en-us</language>
-<link>http://yourwebsite.com/rss.xml</link>
-<atom:link href="http://yourwebsite.com/rss.xml" rel="self" type="application/rss+xml" />
+<link>http://torjusdahle.com/rss.xml</link>
+<atom:link href="http://torjusdahle.com/rss.xml" rel="self" type="application/rss+xml" />
 
 <!-- LB -->
-
-<item>
-<title>Let go of mistakes</title>
-<guid>https://torjusdahle.com/2021.html#let-go-of-mistakes</guid>
-<pubDate>Sun, 18 Jul 2021 12:14:42 +0200</pubDate>
-<description><![CDATA[
-<p>
-“No man ever steps in the same river twice, for it's not the same river and he's not the same man.”
-- Heraclitus
-</p>
-
-<p>
-Consider all the mistakes you have made in your private and working life.
-You have probably learnt, re-learnt and changed many times.
-You are not the same person as you were a year or even a day ago.
-There is no need to ponder past mistakes. They do not define you.
-They have passed and will forever remain immutable, while you will be reborn in infinite ways going forward.
-Take responsibility for the present moment and move forward with grace.
-</p>
-]]></description>
-</item>
-
-
-<item>
-<title>Binding capslock to escape</title>
-<guid>https://torjusdahle.com/2020.html#binding-capslock-to-escape</guid>
-<pubDate>Sat, 05 Dec 2020 18:56:28 +0000</pubDate>
-<description><![CDATA[
-<h1>Binding caps to esc on modern linux systems</h1>
-<p>/usr/bin/setxkbmap -option "caps:escape"</p>
-<p>will do the job on most systems, add to autostart (eg. Session and startup on xfce)</p>
-]]></description>
-</item>
-
-
-<item>
-<title>First post</title>
-<guid>https://torjusdahle.com/2020.html#first-post</guid>
-<pubDate>Sat, 05 Dec 2020 18:51:43 +0000</pubDate>
-<description><![CDATA[
-<h1>Purpose/content</h1>
-<p>Hi and welcome to my site. I will probably use
-it mostly for notes, guides and various information
-recorded for personal use, but that maybe one day
-can be helpful for others as well.<p>
-]]></description>
-</item>
-
-
-
 
 </channel>
 </rss>
