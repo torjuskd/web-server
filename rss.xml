@@ -12,6 +12,62 @@
 <!-- LB -->
 
 <item>
+<title>Shell basics: Pipes and redirection</title>
+<guid>https://torjusdahle.com/2021.html#shell-basics-pipes-and-redirection</guid>
+<pubDate>Tue, 27 Jul 2021 16:54:05 +0200</pubDate>
+<description><![CDATA[
+<p>
+	Every (UNIX) process has (at least) 3 communication channels available to it:
+	Standard input (STDIN), Standard output (STDOUT) and standard error (STDERR).
+	These are initially inherited from the parent process, so the child process
+	does not necessarily know where they lead.
+	These can connect to a terminal, a file, a network connection or a
+	channel belonging to another process.
+</p>
+
+<h3>Symlinks</h3>
+<p>
+	Stdin, stdout, stderr are presented as actually symlinks to /proc/self/fd/{0,1,2},
+	directory listing from /dev:
+</p>
+
+<pre><code>
+$ ls -la /dev/{stdin,stdout,stderr}
+lrwxrwxrwx 1 root root 15 Jul 27 13:36 /dev/stderr -&gt; /proc/self/fd/2
+lrwxrwxrwx 1 root root 15 Jul 27 13:36 /dev/stdin -&gt; /proc/self/fd/0
+lrwxrwxrwx 1 root root 15 Jul 27 13:36 /dev/stdout -&gt; /proc/self/fd/1
+</pre></code>
+
+<p>
+STDIN, STDOUT and STDERR are in fact guaranteed to correspond to file
+descriptors 0, 1 and 2.
+Normally in interactive terminal sessions, STDIN reads from the keyboard
+and STDOUT and STDERR write their output to the terminal window.
+</p>
+<h3>Symbols</h3>
+
+<ul>
+  <li>&lt; Connect command's STDIN to the contents of a file </li>
+  <li>&gt; Redirect STDOUT to file, replace existing file contents</li>
+  <li>&gt;&gt; Redirect STDOUT to file, append to file</li>
+  <li>2&gt; Redirect STDERR</li>
+  <li>&amp;&gt; Redirect both STDOUT and STDERR (From `man bash`: There  are  two  formats  for  redirecting standard output and standard error: &amp;&gt;word and &gt;&amp;word of the two forms, the first is preferred. This is semantically equivalent to &gt;word 2&gt;&amp;1)</li>
+  <li>| Connect STDOUT of one command to STDIN of another</li>
+  <li>&amp;&amp; Execute second command if only if the previous command succeeded</li>
+  <li>|| Execute second command if only if the previous command failed (as in exited with a non-zero status)</li>
+</ul>
+
+<p>
+	An example of use of redirection to avoid spammy "Permission denied" output:
+</p>
+<p>
+	<code>find / -type f -name test 2&gt;/dev/null</code>
+</p>
+]]></description>
+</item>
+
+
+<item>
 <title>Let go of mistakes</title>
 <guid>https://torjusdahle.com/2021.html#let-go-of-mistakes</guid>
 <pubDate>Tue, 27 Jul 2021 14:03:14 +0200</pubDate>
